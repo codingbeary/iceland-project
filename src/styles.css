@@ -1,0 +1,79 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/iceland.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 260px 0;
+}
+header h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+header h2 {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #272044;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: white;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 24px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  header a {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+}
