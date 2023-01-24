@@ -32,10 +32,19 @@ body {
 }
 
 .northernLights-photo {
-  max-width: 100%;
+  width: 100%;
 }
 .card {
   background: white;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .card-body {
@@ -230,5 +239,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
