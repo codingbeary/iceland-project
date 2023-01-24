@@ -14,8 +14,17 @@ body {
   grid-gap: 64px;
 }
 
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-3-columns-with-first-narrow {
@@ -24,6 +33,34 @@ body {
 
 .northernLights-photo {
   max-width: 100%;
+}
+.card {
+  background: white;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 20px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #363e41;
+  text-decoration: none;
+}
+.text-center {
+  text-align: center;
 }
 
 header {
@@ -94,6 +131,21 @@ main h3 {
   color: #272044;
   margin: 0;
 }
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
 
 main p {
   font-style: normal;
@@ -105,17 +157,17 @@ main p {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px;
+}
+.secondary {
+  background: #f8f8f8;
 }
 
 footer {
   color: white;
-  background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/iceland-footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
