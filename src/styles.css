@@ -72,6 +72,11 @@ body {
   text-align: center;
 }
 
+.autor {
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../images/iceland.jpg");
