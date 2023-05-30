@@ -17,7 +17,12 @@ body {
   max-width: 100%;
   display: block;
 }
-
+ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  list-style: none;
+}
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
