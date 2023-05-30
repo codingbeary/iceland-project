@@ -19,27 +19,50 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7031611211.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Iceland Landing Page</title>
   </head>
   <body>
-    <!-- HEADER -->
-
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-house" style="color: #f0f0f0"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon navbar bg-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Why Iceland?</a>
+            <a class="nav-link" href="#">Cafès</a>
+            <a class="nav-link disabled">Photos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
     <div class="container">
+      <!-- HEADER -->
       <header>
-        <!-- NAVBAR -->
-        <nav class="fixed-top">
-          <ul>
-            <li>Home</li>
-            <li>Why Iceland?</li>
-            <li>Cafès</li>
-            <li>Photos</li>
-          </ul>
-        </nav>
-        <!-- END OF NAVBAR -->
-        <h3>•TRAVEL•</h3>
-        <h1>Iceland</h1>
-        <h2>Escape the ordinary</h2>
-        <a href="#more">Learn more</a>
+        <hero>
+          <h3>•TRAVEL•</h3>
+          <h1>Iceland</h1>
+          <h2>Escape the ordinary</h2>
+          <a href="#more">Learn more</a>
+        </hero>
       </header>
 
       <!-- END OF HEADER -->
