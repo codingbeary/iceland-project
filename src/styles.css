@@ -17,12 +17,7 @@ body {
   max-width: 100%;
   display: block;
 }
-ul {
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-  list-style: none;
-}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
@@ -35,8 +30,141 @@ ul {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-.northernLights-photo {
+.text-center {
+  text-align: center;
+}
+
+.navbar-nav {
+  font-weight: 300;
+  max-width: 1400px;
+}
+
+/* HEADER STYLE */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/rory-hennessey-PBrovES5uuI-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 260px 0;
+}
+header h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header h4 {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #272044;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: white;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 32px;
+  transition: all 160ms ease-in-out;
+}
+header a:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.icon {
+  font-size: 23px;
+}
+
+/* END OF HEADER STYLING */
+
+/* MAIN SECTION STYLING */
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-size: 36px;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  color: #b5b5b5;
+  padding: 60px 0 40px 0;
+  font-weight: 200;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin-bottom: 20px;
+  transition: all 160ms ease-in-out;
+}
+main h3:hover {
+  color: #ca2d00;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+  max-width: 70%;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #272044;
+  opacity: 0.7;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px 100px;
+}
+.secondary {
+  background: #f8f8f8;
+}
+.mainSectionPhoto {
   width: 100%;
+  border-radius: 10px;
 }
 .card {
   background: white;
@@ -71,117 +199,16 @@ ul {
   padding: 16px;
   background-color: #363e41;
   text-decoration: none;
-}
-.text-center {
-  text-align: center;
+  transition: all 160ms ease-in-out;
 }
 
-.autor {
-  margin-top: 20px;
-  opacity: 0.5;
+.btn:hover {
+  border: 1px solid grey;
 }
 
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("../images/rory-hennessey-PBrovES5uuI-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 260px 0;
-}
-header h1 {
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0;
-}
-header h2 {
-  font-weight: 200;
-  font-size: 40px;
-  line-height: 1.5;
-  margin: 0;
-}
+/* END OF MAIN SECTION STYLING */
 
-header h3 {
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  margin: 0;
-}
-
-header a {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-  color: #272044;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background-color: white;
-  text-decoration: none;
-  padding: 16px 32px;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 32px;
-}
-
-main {
-  background-color: white;
-}
-
-main h2 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  color: #272044;
-  opacity: 0.3;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-main h3 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.5;
-  color: #272044;
-  margin: 0;
-}
-main h4 {
-  font-weight: 700;
-  font-size: 24px;
-  margin: 0;
-  line-height: 1;
-  color: #272044;
-}
-
-main h5 {
-  font-weight: 700;
-  font-size: 13px;
-  margin: 0;
-  line-height: 1;
-  color: #272044;
-}
-
-main p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #272044;
-  opacity: 0.7;
-}
-
-section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 100px;
-}
-.secondary {
-  background: #f8f8f8;
-}
+/* FOOTER STYLING */
 
 footer {
   color: white;
@@ -218,6 +245,11 @@ footer a {
   color: white;
   opacity: 0.7;
 }
+.autor {
+  margin-top: 20px;
+  opacity: 0.5;
+}
+/* END OF FOOTER STYLING */
 
 @media (max-width: 960px) {
   header {

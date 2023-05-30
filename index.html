@@ -26,60 +26,62 @@
     <title>Iceland Landing Page</title>
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <i class="fa-solid fa-house" style="color: #f0f0f0"></i>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon navbar bg-dark"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Why Iceland?</a>
-            <a class="nav-link" href="#">Cafès</a>
-            <a class="nav-link disabled">Photos</a>
+    <div class="container">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon navbar bg-dark"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="fa-solid fa-house icon" style="color: #f0f0f0"></i
+              ></a>
+              <a class="nav-link" href="#">Why Iceland?</a>
+              <a class="nav-link" href="#">Cafès</a>
+              <a class="nav-link disabled">Photos</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- END OF NAVBAR -->
-    <div class="container">
+      </nav>
+      <!-- END OF NAVBAR -->
       <!-- HEADER -->
       <header>
-        <hero>
-          <h3>•TRAVEL•</h3>
-          <h1>Iceland</h1>
-          <h2>Escape the ordinary</h2>
-          <a href="#more">Learn more</a>
-        </hero>
+        <h2>•TRAVEL•</h2>
+        <h1>Iceland</h1>
+        <h4>Escape the ordinary</h4>
+        <a href="#more">Learn more</a>
       </header>
 
       <!-- END OF HEADER -->
 
       <!-- MAIN SECTION -->
       <main>
-        <h2>Why Iceland?</h2>
+        <h2 class="whyIceland">Iceland: Where Fire Meets Ice</h2>
+
+        <!-- WHY ICELAND SECTION -->
         <section class="grid grid-2-columns">
           <div>
             <img
               src="/images/norther-lights.jpg"
-              class="northernLights-photo"
+              class="mainSectionPhoto"
               alt="Northern lights"
             />
           </div>
           <div>
-            <h2>Mystical Nordic Lights: Nature's Dazzling Display</h2>
+            <h4>Nature's Dazzling Display</h4>
             <h3>The northern lights</h3>
             <p>
               The extreme dark of the Icelandic winter has a few perks. Between
@@ -91,7 +93,7 @@
         </section>
         <section class="grid grid-2-columns">
           <div>
-            <h2>Nature's Blissful Escape</h2>
+            <h4>Nature's Blissful Escape</h4>
             <h3>Icelandic Geothermal Baths</h3>
             <p>
               The extreme dark of the Icelandic winter has a few perks. Between
@@ -103,8 +105,8 @@
           <div>
             <img
               src="/images/geothermalBaths.png"
-              class="northernLights-photo"
-              alt="Northern lights"
+              class="mainSectionPhoto"
+              alt="Geothermal Baths"
             />
           </div>
         </section>
@@ -112,12 +114,12 @@
           <div>
             <img
               src="/images/tetiana-grypachevska-80x3QULJDN4-unsplash.jpg"
-              class="northernLights-photo"
-              alt="Northern lights"
+              class="mainSectionPhoto"
+              alt="Volcanoes"
             />
           </div>
           <div>
-            <h2>Fierce Beauty</h2>
+            <h4>Fierce Beauty</h4>
             <h3>Exploring Icelandic Volcanoes</h3>
             <p>
               The extreme dark of the Icelandic winter has a few perks. Between
@@ -127,6 +129,11 @@
             </p>
           </div>
         </section>
+
+        <!-- WHY ICELAND END OF SECTION -->
+
+        <!-- CAFES SECTION -->
+
         <section class="secondary">
           <h2 class="text-center">CAFÈS</h2>
           <h3 class="text-center">Cafès to visit in Iceland</h3>
@@ -230,6 +237,10 @@
             </div>
           </div>
         </section>
+
+        <!-- END OF CAFES SECTION -->
+
+        <!-- GALLERY SECTION -->
         <section>
           <h2 class="text-center">Gallery</h2>
           <h3 class="text-center">Photos from Iceland</h3>
@@ -1085,7 +1096,14 @@
             <script async src="//www.instagram.com/embed.js"></script>
           </div>
         </section>
+
+        <!-- END OF GALLERY SECTION -->
       </main>
+
+      <!-- END OF MAIN SECTION -->
+
+      <!-- FOOTER -->
+
       <footer>
         <section class="grid grid-3-columns-with-first-narrow">
           <div>
@@ -1128,6 +1146,8 @@
           </div>
         </section>
       </footer>
+      <!-- END OF FOOTER -->
+
       <div class="autor text-center">
         This project was coded by Kinga Miśkiewicz and is
         <a
