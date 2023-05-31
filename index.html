@@ -28,7 +28,10 @@
   <body>
     <div class="container">
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+        id="navId"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler"
@@ -44,21 +47,24 @@
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
+            data-bs-spy="scroll"
+            data-bs-target="#navId"
+            tabindex="0"
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#home">
                   <i class="fa-solid fa-house icon" style="color: #bababa"></i>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Cafès</a>
+                <a class="nav-link" href="#cafes">Cafès</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Gallery</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
               </li>
             </ul>
           </div>
@@ -66,84 +72,86 @@
       </nav>
       <!-- END OF NAVBAR -->
       <!-- HEADER -->
-      <header>
+      <header id="home">
         <h2>•TRAVEL•</h2>
         <h1>Iceland</h1>
         <h4>Escape the ordinary</h4>
         <a href="#more">Learn more</a>
-        <div class="scroll-down"></div>
+        <div class="scroll-down" id="scrollDown"></div>
       </header>
 
       <!-- END OF HEADER -->
 
       <!-- MAIN SECTION -->
       <main>
-        <h2 class="whyIceland">Iceland: Where Fire Meets Ice</h2>
+        <h2 class="whyIceland" id="about">Iceland: Where Fire Meets Ice</h2>
 
         <!-- WHY ICELAND SECTION -->
-        <section class="grid grid-2-columns">
-          <div>
-            <img
-              src="/images/norther-lights.jpg"
-              class="mainSectionPhoto"
-              alt="Northern lights"
-            />
-          </div>
-          <div>
-            <h4>Nature's Dazzling Display</h4>
-            <h3>The northern lights</h3>
-            <p>
-              The extreme dark of the Icelandic winter has a few perks. Between
-              September and April, people in Iceland are treated to a
-              magnificent natural display: the phenomenon of aurora borealis, or
-              what we commonly call the Northern Lights.
-            </p>
-          </div>
-        </section>
-        <section class="grid grid-2-columns">
-          <div>
-            <h4>Nature's Blissful Escape</h4>
-            <h3>Icelandic Geothermal Baths</h3>
-            <p>
-              The extreme dark of the Icelandic winter has a few perks. Between
-              September and April, people in Iceland are treated to a
-              magnificent natural display: the phenomenon of aurora borealis, or
-              what we commonly call the Northern Lights.
-            </p>
-          </div>
-          <div>
-            <img
-              src="/images/geothermalBaths.png"
-              class="mainSectionPhoto"
-              alt="Geothermal Baths"
-            />
-          </div>
-        </section>
-        <section class="grid grid-2-columns">
-          <div>
-            <img
-              src="/images/tetiana-grypachevska-80x3QULJDN4-unsplash.jpg"
-              class="mainSectionPhoto"
-              alt="Volcanoes"
-            />
-          </div>
-          <div class="lastSection">
-            <h4>Fierce Beauty</h4>
-            <h3>Exploring Icelandic Volcanoes</h3>
-            <p>
-              The extreme dark of the Icelandic winter has a few perks. Between
-              September and April, people in Iceland are treated to a
-              magnificent natural display: the phenomenon of aurora borealis, or
-              what we commonly call the Northern Lights.
-            </p>
-          </div>
-        </section>
+        <div class="aboutContainer">
+          <section class="grid grid-2-columns">
+            <div class="aboutPhoto">
+              <img
+                src="/images/norther-lights.jpg"
+                class="mainSectionPhoto"
+                alt="Northern lights"
+              />
+            </div>
+            <div class="aboutText">
+              <h4>Nature's Dazzling Display</h4>
+              <h3>The northern lights</h3>
+              <p>
+                The extreme dark of the Icelandic winter has a few perks.
+                Between September and April, people in Iceland are treated to a
+                magnificent natural display: the phenomenon of aurora borealis,
+                or what we commonly call the Northern Lights.
+              </p>
+            </div>
+          </section>
+          <section class="grid grid-2-columns">
+            <div class="aboutText">
+              <h4>Nature's Blissful Escape</h4>
+              <h3>Icelandic Geothermal Baths</h3>
+              <p>
+                The extreme dark of the Icelandic winter has a few perks.
+                Between September and April, people in Iceland are treated to a
+                magnificent natural display: the phenomenon of aurora borealis,
+                or what we commonly call the Northern Lights.
+              </p>
+            </div>
+            <div class="aboutPhoto">
+              <img
+                src="/images/geothermalBaths.png"
+                class="mainSectionPhoto"
+                alt="Geothermal Baths"
+              />
+            </div>
+          </section>
+          <section class="grid grid-2-columns">
+            <div class="aboutPhoto">
+              <img
+                src="/images/tetiana-grypachevska-80x3QULJDN4-unsplash.jpg"
+                class="mainSectionPhoto"
+                alt="Volcanoes"
+              />
+            </div>
+            <div class="lastSection aboutText">
+              <h4>Fierce Beauty</h4>
+              <h3>Exploring Icelandic Volcanoes</h3>
+              <p>
+                The extreme dark of the Icelandic winter has a few perks.
+                Between September and April, people in Iceland are treated to a
+                magnificent natural display: the phenomenon of aurora borealis,
+                or what we commonly call the Northern Lights.
+              </p>
+            </div>
+          </section>
+        </div>
 
         <!-- END OF ABOUT SECTION -->
 
         <!-- CAFES SECTION -->
 
-        <section class="secondary">
+        <section class="secondary" id="cafes">
           <h2 class="text-center">CAFÈS</h2>
           <h3 class="text-center">Icelandic Coffee Trail</h3>
 
@@ -250,7 +258,7 @@
         <!-- END OF CAFES SECTION -->
 
         <!-- GALLERY SECTION -->
-        <section class="gallery">
+        <section class="gallery" id="gallery">
           <h2 class="text-center">Gallery</h2>
           <h3 class="text-center">Photos from Iceland</h3>
           <br />
@@ -1141,9 +1149,12 @@
           <div>
             <h3>About me</h3>
             <p>
-              Hi! My name is Kinga Miśkiewicz and I'm really interested in
-              culture of Nordic countries. I created this website as a part of
-              project for SheCodes Responsive to develop my coding skills.
+              Combining my passion for engineering with the irresistible Nordic
+              vibe, I've crafted this website as a tribute to the captivating
+              beauty of Iceland. Join me on this unique adventure where
+              technology meets the allure of the Nordic countries. Let's delve
+              into Iceland's untamed landscapes and immerse ourselves in its
+              enchanting magic.
             </p>
           </div>
           <div>
@@ -1166,5 +1177,11 @@
         >
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
   </body>
 </html>

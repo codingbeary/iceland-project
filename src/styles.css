@@ -101,8 +101,8 @@ header a:hover {
   width: 30px;
   border: 2px solid white;
   position: absolute;
+  bottom: 24%;
   left: 50%;
-  bottom: 20px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -310,22 +310,25 @@ footer a {
   opacity: 0.5;
 }
 /* END OF FOOTER STYLING */
-
+@media (max-width: 1250px) {
+  .grid-3-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (max-width: 960px) {
   header {
-    padding: 60px 0;
+    padding: 180px 0;
   }
 
   header h1 {
     font-size: 48px;
   }
-
   header h2 {
-    font-size: 24px;
+    font-size: 12px;
   }
 
   header h3 {
-    font-size: 12px;
+    font-size: 24px;
   }
 
   header a {
@@ -337,16 +340,49 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-
-  section {
-    padding: 30px;
+  .scroll-down {
+    bottom: 45%;
   }
-
+  main > h2 {
+    font-size: 28px;
+  }
+  section {
+    padding: 40px 60px;
+  }
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .aboutText {
+    order: 1;
+    text-align: center;
+  }
+  .aboutPhoto {
+    order: 2;
+  }
+  .aboutContainer img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .aboutContainer h4 {
+    text-align: center;
+  }
   .card-header img {
     display: none;
   }
 
   .embed {
     aspect-ratio: 16/9;
+  }
+}
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 32px;
+  }
+  header h4 {
+    font-size: 24px;
+  }
+  .scroll-down {
+    bottom: 45%;
   }
 }
