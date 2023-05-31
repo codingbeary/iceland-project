@@ -28,31 +28,39 @@
   <body>
     <div class="container">
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon navbar bg-dark"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup"
+            id="navbarNav"
           >
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><i class="fa-solid fa-house icon" style="color: #f0f0f0"></i
-              ></a>
-              <a class="nav-link" href="#">Why Iceland?</a>
-              <a class="nav-link" href="#">Cafès</a>
-              <a class="nav-link disabled">Photos</a>
-            </div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <i class="fa-solid fa-house icon" style="color: #bababa"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cafès</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Gallery</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -63,6 +71,7 @@
         <h1>Iceland</h1>
         <h4>Escape the ordinary</h4>
         <a href="#more">Learn more</a>
+        <div class="scroll-down"></div>
       </header>
 
       <!-- END OF HEADER -->
@@ -118,7 +127,7 @@
               alt="Volcanoes"
             />
           </div>
-          <div>
+          <div class="lastSection">
             <h4>Fierce Beauty</h4>
             <h3>Exploring Icelandic Volcanoes</h3>
             <p>
@@ -130,13 +139,13 @@
           </div>
         </section>
 
-        <!-- WHY ICELAND END OF SECTION -->
+        <!-- END OF ABOUT SECTION -->
 
         <!-- CAFES SECTION -->
 
         <section class="secondary">
           <h2 class="text-center">CAFÈS</h2>
-          <h3 class="text-center">Cafès to visit in Iceland</h3>
+          <h3 class="text-center">Icelandic Coffee Trail</h3>
 
           <div class="grid grid-3-columns">
             <div class="card">
@@ -241,7 +250,7 @@
         <!-- END OF CAFES SECTION -->
 
         <!-- GALLERY SECTION -->
-        <section>
+        <section class="gallery">
           <h2 class="text-center">Gallery</h2>
           <h3 class="text-center">Photos from Iceland</h3>
           <br />
