@@ -2,6 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #eeee;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 /* GENERAL CLASSES */
@@ -13,7 +14,7 @@ body {
 
 .grid {
   display: grid;
-  grid-gap: 64px;
+  grid-gap: 6.4em;
 }
 
 .img-responsive {
@@ -46,10 +47,13 @@ header {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 260px 0;
+  padding: 26em 0;
+}
+li {
+  font-size: 1.4em;
 }
 header h1 {
-  font-size: 96px;
+  font-size: 9.6em;
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
@@ -57,32 +61,32 @@ header h1 {
 
 header h2 {
   font-weight: 900;
-  font-size: 24px;
+  font-size: 2.4em;
   line-height: 1.5;
-  letter-spacing: 5px;
+  letter-spacing: 0.5em;
   margin: 0;
 }
 header h4 {
   font-weight: 200;
-  font-size: 40px;
+  font-size: 4em;
   line-height: 1.5;
   margin: 0;
 }
 
 header a {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1.4em;
   line-height: 1.5;
   text-align: center;
   color: #272044;
-  letter-spacing: 3px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   background-color: white;
   text-decoration: none;
-  padding: 16px 32px;
+  padding: 1.6em 3.2em;
   border-radius: 5px;
   display: inline-block;
-  margin-top: 32px;
+  margin-top: 3.2em;
   transition: all 160ms ease-in-out;
 }
 header a:hover {
@@ -90,20 +94,22 @@ header a:hover {
   color: white;
   border: 1px solid white;
 }
-
+.active {
+  color: #ca2d00;
+}
 .icon {
-  font-size: 23px;
+  font-size: 2em;
 }
 .navbar-nav {
   font-weight: 300;
 }
 
 .scroll-down {
-  height: 50px;
-  width: 30px;
+  height: 5em;
+  width: 3em;
   border: 2px solid white;
   position: absolute;
-  bottom: 24%;
+  bottom: 10%;
   left: 50%;
   border-radius: 50px;
   cursor: pointer;
@@ -114,8 +120,8 @@ header a:hover {
   position: absolute;
   top: 20%;
   left: 50%;
-  height: 10px;
-  width: 10px;
+  height: 1em;
+  width: 1em;
   transform: translate(-50%, -100%) rotate(45deg);
   border: 2px solid white;
   border-top: transparent;
@@ -153,21 +159,21 @@ main {
 }
 
 main h2 {
-  font-size: 36px;
+  font-size: 3.6em;
   margin: 0;
   line-height: 1;
   text-align: center;
   color: #b5b5b5;
-  padding: 60px 0 40px 0;
+  padding: 3em 0 2em 0;
   font-weight: 200;
 }
 
 main h3 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 4em;
   line-height: 1.5;
   color: #272044;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
   transition: all 160ms ease-in-out;
 }
 main h3:hover {
@@ -175,19 +181,19 @@ main h3:hover {
 }
 main h4 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6em;
   line-height: 1.5;
-  letter-spacing: 5px;
+  letter-spacing: 0.5em;
   color: #272044;
   opacity: 0.3;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 1.2em;
   border-bottom: 1px solid grey;
   max-width: 70%;
 }
 main h5 {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 1.3em;
   margin: 0;
   line-height: 1;
   color: #272044;
@@ -196,7 +202,7 @@ main h5 {
 main p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6em;
   line-height: 1.7;
   color: #272044;
   opacity: 0.7;
@@ -205,17 +211,17 @@ main p {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 50px 100px;
+  padding: 5em 10em;
 }
 .secondary h2,
 .gallery h2 {
-  padding: 15px;
+  padding: 1.5em;
 }
 .secondary h3 {
-  padding-bottom: 20px;
+  padding-bottom: 1em;
 }
 .lastSection {
-  padding-bottom: 35px;
+  padding-bottom: 3.5em;
 }
 .secondary {
   background: #f8f8f8;
@@ -242,23 +248,23 @@ section {
 }
 
 .card-body {
-  padding: 30px;
+  padding: 3em;
 }
 
 .card-footer {
-  padding: 20px;
+  padding: 2em;
 }
 
 .btn {
   display: block;
   color: white;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1.4em;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  padding: 16px;
+  padding: 1.6em;
   background-color: #363e41;
   text-decoration: none;
   transition: all 160ms ease-in-out;
@@ -282,13 +288,13 @@ footer {
 
 footer h3 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2em;
   line-height: 1.5;
 }
 
 footer p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6em;
   line-height: 1.5;
   opacity: 0.7;
 }
@@ -308,7 +314,7 @@ footer a {
   opacity: 0.7;
 }
 .autor {
-  margin-top: 20px;
+  margin-top: 2em;
   opacity: 0.5;
 }
 /* END OF FOOTER STYLING */
@@ -319,37 +325,37 @@ footer a {
 }
 @media (max-width: 960px) {
   header {
-    padding: 180px 0;
+    padding: 18em 0;
   }
 
   header h1 {
-    font-size: 48px;
+    font-size: 4.8em;
   }
   header h2 {
-    font-size: 12px;
+    font-size: 1.2em;
   }
 
   header h3 {
-    font-size: 24px;
+    font-size: 2.4em;
   }
 
   header a {
-    padding: 10px 12px;
-    font-size: 10px;
+    padding: 1em 1.2em;
+    font-size: 1em;
   }
 
   .grid {
     grid-template-columns: 1fr;
-    grid-gap: 32px;
+    grid-gap: 3.2em;
   }
   .scroll-down {
     bottom: 45%;
   }
   main > h2 {
-    font-size: 28px;
+    font-size: 2.8em;
   }
   section {
-    padding: 40px 60px;
+    padding: 4em 6em;
   }
   .aboutContainer {
     flex-direction: column;
@@ -382,30 +388,40 @@ footer a {
     padding: 0;
   }
   header {
-    padding: 140px 0 60px 0;
+    padding: 14em 0 6em 0;
   }
   header h1 {
-    font-size: 32px;
+    font-size: 3.2em;
   }
   header h4 {
-    font-size: 24px;
+    font-size: 2.4em;
+    letter-spacing: 0.2em;
   }
   .scroll-down {
-    bottom: 35%;
-    height: 40px;
-    left: 45%;
+    display: none;
+  }
+  .aboutContainer > section {
+    padding: 2em 4em;
   }
   main h2 {
-    padding: 30px 20px;
-    font-size: 24px;
+    padding: 3em 2em 2em 2em;
+    font-size: 2.4em;
   }
   main h3 {
-    font-size: 30px;
+    font-size: 2.7em;
+    padding-top: 1em;
   }
   main h4 {
     display: block;
     margin: 0 auto;
-    padding: 20px 0;
+    padding-top: 0;
+    padding-bottom: 2em;
+  }
+  main p {
+    font-size: 1.4em;
+  }
+  section.secondary {
+    padding: 1em 3em;
   }
 
   section.gallery {
@@ -413,9 +429,9 @@ footer a {
   }
 
   footer p {
-    font-size: 14px;
+    font-size: 1.4em;
   }
   .autor {
-    font-size: 12px;
+    font-size: 1.2em;
   }
 }
