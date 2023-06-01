@@ -104,7 +104,7 @@ header a:hover {
   font-weight: 300;
 }
 
-.scroll-down {
+/* .scroll-down {
   height: 5em;
   width: 3em;
   border: 2px solid white;
@@ -131,7 +131,7 @@ header a:hover {
 .scroll-down::before {
   top: 30%;
   animation-delay: 0.3s;
-}
+} */
 
 @keyframes scroll-down {
   0% {
