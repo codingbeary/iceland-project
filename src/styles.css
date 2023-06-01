@@ -109,7 +109,7 @@ header a:hover {
   width: 3em;
   border: 2px solid white;
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 50%;
   border-radius: 50px;
   cursor: pointer;
