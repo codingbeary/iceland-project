@@ -1,7 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #eeee;
+  box-sizing: border-box;
 }
+
+/* GENERAL CLASSES */
 
 .container {
   max-width: 1400px;
@@ -32,10 +35,6 @@ body {
 
 .text-center {
   text-align: center;
-}
-
-.navbar-nav {
-  font-weight: 300;
 }
 
 /* HEADER STYLE */
@@ -94,6 +93,9 @@ header a:hover {
 
 .icon {
   font-size: 23px;
+}
+.navbar-nav {
+  font-weight: 300;
 }
 
 .scroll-down {
@@ -376,6 +378,9 @@ footer a {
   }
 }
 @media (max-width: 400px) {
+  .container {
+    padding: 0;
+  }
   header h1 {
     font-size: 32px;
   }
@@ -383,6 +388,18 @@ footer a {
     font-size: 24px;
   }
   .scroll-down {
-    bottom: 45%;
+    bottom: 35%;
+    height: 40px;
+    left: 45%;
+  }
+  section.gallery {
+    padding: 0;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+  .autor {
+    font-size: 12px;
   }
 }
