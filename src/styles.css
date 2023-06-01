@@ -48,6 +48,7 @@ header {
   color: white;
   text-align: center;
   padding: 26em 0;
+  position: relative;
 }
 li {
   font-size: 1.4em;
@@ -104,15 +105,16 @@ header a:hover {
   font-weight: 300;
 }
 
-/* .scroll-down {
+.scroll-down {
   height: 5em;
   width: 3em;
   border: 2px solid white;
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: 50%;
   border-radius: 50px;
   cursor: pointer;
+  transform: translate(-50%, 0);
 }
 .scroll-down::before,
 .scroll-down::after {
@@ -131,7 +133,7 @@ header a:hover {
 .scroll-down::before {
   top: 30%;
   animation-delay: 0.3s;
-} */
+}
 
 @keyframes scroll-down {
   0% {
@@ -348,9 +350,7 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 3.2em;
   }
-  .scroll-down {
-    bottom: 45%;
-  }
+
   main > h2 {
     font-size: 2.8em;
   }
