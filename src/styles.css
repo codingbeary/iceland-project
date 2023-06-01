@@ -53,31 +53,32 @@ header {
 li {
   font-size: 1.4em;
 }
+header h1,
+header h2,
+header h4,
+header a {
+  line-height: 1.5;
+  margin: 0;
+}
+
 header h1 {
   font-size: 9.6em;
   font-weight: 700;
-  line-height: 1.5;
-  margin: 0;
 }
 
 header h2 {
   font-weight: 900;
   font-size: 2.4em;
-  line-height: 1.5;
   letter-spacing: 0.5em;
-  margin: 0;
 }
 header h4 {
   font-weight: 200;
   font-size: 4em;
-  line-height: 1.5;
-  margin: 0;
 }
 
 header a {
   font-weight: 700;
   font-size: 1.4em;
-  line-height: 1.5;
   text-align: center;
   color: #272044;
   letter-spacing: 0.3em;
@@ -95,9 +96,7 @@ header a:hover {
   color: white;
   border: 1px solid white;
 }
-.active {
-  color: #ca2d00;
-}
+
 .icon {
   font-size: 2em;
 }
@@ -159,21 +158,27 @@ header a:hover {
 main {
   background-color: white;
 }
+main h2,
+main h5 {
+  line-height: 1;
+  margin: 0;
+}
 
 main h2 {
   font-size: 3.6em;
-  margin: 0;
-  line-height: 1;
   text-align: center;
   color: #b5b5b5;
   padding: 3em 0 2em 0;
   font-weight: 200;
 }
+main h3,
+main h4 {
+  line-height: 1.5;
+}
 
 main h3 {
   font-weight: 700;
   font-size: 4em;
-  line-height: 1.5;
   color: #272044;
   margin-bottom: 1em;
   transition: all 160ms ease-in-out;
@@ -184,7 +189,6 @@ main h3:hover {
 main h4 {
   font-weight: 700;
   font-size: 1.6em;
-  line-height: 1.5;
   letter-spacing: 0.5em;
   color: #272044;
   opacity: 0.3;
@@ -196,8 +200,6 @@ main h4 {
 main h5 {
   font-weight: 700;
   font-size: 1.3em;
-  margin: 0;
-  line-height: 1;
   color: #272044;
 }
 
@@ -215,24 +217,29 @@ section {
   margin: 0 auto;
   padding: 5em 10em;
 }
+.secondary {
+  background: #f8f8f8;
+}
+
 .secondary h2,
 .gallery h2 {
   padding: 1.5em;
 }
+
 .secondary h3 {
   padding-bottom: 1em;
 }
+
 .lastSection {
   padding-bottom: 3.5em;
 }
-.secondary {
-  background: #f8f8f8;
-}
+
 .mainSectionPhoto {
   width: 100%;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
+
 .mainSectionPhoto:hover {
   transform: scale(1.1);
 }
@@ -315,10 +322,11 @@ footer a {
   color: white;
   opacity: 0.7;
 }
-.autor {
+.author {
   margin-top: 2em;
   opacity: 0.5;
 }
+
 /* END OF FOOTER STYLING */
 @media (max-width: 1250px) {
   .grid-3-columns {
@@ -346,35 +354,41 @@ footer a {
     font-size: 1em;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 3.2em;
-  }
-
   main > h2 {
     font-size: 2.8em;
   }
   section {
     padding: 4em 6em;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 3.2em;
+  }
+
   .aboutContainer {
     flex-direction: column;
   }
+
   .aboutText {
     order: 1;
     text-align: center;
   }
+
   .aboutPhoto {
     order: 2;
   }
+
   .aboutContainer img {
     max-width: 80%;
     display: block;
     margin: 0 auto;
   }
+
   .aboutContainer h4 {
     text-align: center;
   }
+
   .card-header img {
     display: none;
   }
@@ -384,9 +398,6 @@ footer a {
   }
 }
 @media (max-width: 400px) {
-  .container {
-    padding: 0;
-  }
   header {
     padding: 14em 0 6em 0;
   }
@@ -396,12 +407,6 @@ footer a {
   header h4 {
     font-size: 2.4em;
     letter-spacing: 0.2em;
-  }
-  .scroll-down {
-    display: none;
-  }
-  .aboutContainer > section {
-    padding: 2em 4em;
   }
   main h2 {
     padding: 3em 2em 2em 2em;
@@ -427,9 +432,20 @@ footer a {
   section.gallery {
     padding: 0;
   }
-
   footer p {
     font-size: 1.4em;
+  }
+  footer .aboutMe {
+    display: none;
+  }
+  .container {
+    padding: 0;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .aboutContainer > section {
+    padding: 2em 4em;
   }
   .autor {
     font-size: 1.2em;
