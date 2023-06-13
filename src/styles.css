@@ -107,6 +107,7 @@ header a:hover {
 }
 
 .navbar-nav {
+  align-items: center;
   font-weight: 300;
 }
 
